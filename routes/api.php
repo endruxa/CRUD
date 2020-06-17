@@ -22,3 +22,9 @@ Route::get('/post/edit/{id}', 'PostController@edit');
 Route::post('/post/update/{id}', 'PostController@update');
 Route::delete('/post/delete/{id}', 'PostController@delete');
 Route::get('/posts', 'PostController@index');
+
+Route::post('/comment/create', 'PostController@store');
+Route::get('/comment/edit/{id}', 'PostController@edit');
+Route::post('/comment/update/{id}', 'PostController@update');
+Route::delete('/comment/delete/{id}', 'PostController@delete');
+Route::get('/comment', 'PostController@index');
